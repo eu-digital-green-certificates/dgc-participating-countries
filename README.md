@@ -1,2 +1,3 @@
-# dgc-onboarding
-All contents and information for onboarding representatives of participating countries.
+# Participating Countries
+
+Share documents and information here that is relevant for all participating countries.
