@@ -22,6 +22,6 @@ For a successfull connection to the gateway there are several steps to prepare:
    Note: cert.der is your DSC, signing.crt ist the Uploader Certificate)
   
  7) Upload the CMS Package to the Gateway<br>
-    ```curl -X POST -H "Content-Transfer-Endcoding: base64" -H "Content-Type: application/cms" https://*****.ec.europa.eu/signercertificate --cert my_client_cert.crt --key my_private_key.pem  --data b64.pem``` <br>
+    ```curl -X POST -H "Content-Transfer-Endcoding: base64" -H "Content-Type: application/cms" https://*****.ec.europa.eu/signercertificate --cert my_client_cert.crt --key my_private_key.pem  --data cms.b64``` <br>
     
 
