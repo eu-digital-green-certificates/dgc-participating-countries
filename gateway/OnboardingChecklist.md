@@ -1,5 +1,9 @@
 # Onboarding Checklist
 
+## Common Hints
+
+Registration Process: [Process](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#31-registration-of-national-backends)
+
 ## Test Environment
 
 For a successfull connection to the gateway there are several steps to prepare: 
@@ -26,7 +30,7 @@ For a successfull connection to the gateway there are several steps to prepare:
  7) Upload the CMS Package to the Gateway<br>
     ```curl -X POST -H "Content-Transfer-Endcoding: base64" -H "Content-Type: application/cms" https://*****.ec.europa.eu/signercertificate --cert my_client_cert.crt --key my_private_key.pem  --data cms.b64``` <br>
  8) Download the Trustlist again, and check if your DSC is available.
-
+ 
 
 ## Acceptance Environment
 
