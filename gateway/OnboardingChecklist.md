@@ -31,6 +31,20 @@ For a successfull connection to the gateway there are several steps to prepare:
     ```curl -v -X POST -H "Content-Type: application/cms" --cert auth_de.pem --key key.pem --data @cms.b64 https://****.ec.europa.eu/signerCertificate``` <br>
  8) Download the Trustlist again, and check if your DSC is available.
  
+ 
+**Note**: Some versions of curl don't attach the client certificates automatically. This can be checked via
+``` curl --version ```
+Ensure that the used version is linked to OpenSSL. Especially under Windows (https://curl.se/windows/): 
+<br><br>
+OpenSSL Test Example (working)<br>
+<br>
+![Working Setup](./images/OpenSSL.PNG)
+<br><br>
+WinSSL Test Example (Not working)
+<br><br>
+![Non Working Setup](./images/WinSSL.PNG)
+
+
 
 ## Acceptance Environment
 
