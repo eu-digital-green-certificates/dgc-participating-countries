@@ -33,7 +33,7 @@ For a successfull connection to the gateway there are several steps to prepare:
 1) Order/Generate your certificates according the defined requirements in [Certificate Governance](https://github.com/eu-digital-green-certificates/dgc-participating-countries/blob/main/gateway/OnboardingChecklist.md):
     - Authentication: NB<sub>TLS</sub> (TLS [Template](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#45national-backend-tls-client-authentication-nbtls))
     - Upload:   NB<sub>UP</sub>(Upload [Template](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#44upload-certificates-nbup))
-    - CSCA(s):  NB<sub>CSCA</sub> (CSCA [Template]((TLS [Template](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#42csca-certificate-nbcsca))))
+    - CSCA(s):  NB<sub>CSCA</sub> (CSCA [Template](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#42csca-certificate-nbcsca))
 2) Transfer the certificates via circABC to the Secretariat
 3) After the certificate whitelisting, test the functionality again with your backend (E2E)
 
