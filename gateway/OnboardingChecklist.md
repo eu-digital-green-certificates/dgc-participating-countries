@@ -19,7 +19,7 @@ For a successfull connection to the gateway there are several steps to prepare:
   ``` 
       openssl x509 -outform der -in cert.pem -out cert.der
       openssl cms -sign -nodetach -in cert.der -signer signing.crt -inkey signing.key -out signed.der -outform DER -binary
-      openssl base64 -in signed.der -out signed.b64 -e -A 
+      openssl base64 -in signed.der -out cms.b64 -e -A 
   ``` 
    Note: cert.der is your DSC, signing.crt ist the Uploader Certificate)
   
