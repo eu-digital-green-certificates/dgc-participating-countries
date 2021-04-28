@@ -14,7 +14,7 @@ For a successfull connection to the gateway there are several steps to prepare:
     - CSCA(s):  NB<sub>CSCA</sub>
  2) Send the Public Keys in CRT Format to the contact of the Test Operator (functional mailbox)
  3) After Onboarding in the Test Environment, check the connectitivy with the following command:<br>
-  ```curl -X GET https://*****.ec.europa.eu/trustlist --cert my_client_cert.crt --key my_private_key.pem``` <br>
+  ```curl -vvv -H "Accept: */*" --resolve ****.ec.europa.eu:443 --cert "auth_de.pem" --key "key.pem" https://****.ec.europa.eu/trustList``` <br>
     You should see a output like: <br>
     ![TrustListOutput](./../images/TrustListResult.PNG)
  4) Test the other Truslist Routes in the same style (e.g. with DSC/CSCA/Upload/Authentication...)
@@ -28,7 +28,7 @@ For a successfull connection to the gateway there are several steps to prepare:
    Note: cert.der is your DSC, signing.crt ist the Uploader Certificate)
   
  7) Upload the CMS Package to the Gateway<br>
-    ```curl -X POST -H "Content-Transfer-Endcoding: base64" -H "Content-Type: application/cms" https://*****.ec.europa.eu/signercertificate --cert my_client_cert.crt --key my_private_key.pem  --data cms.b64``` <br>
+    ```curl -v -X POST -H "Content-Type: application/cms" --cert auth_de.pem --key key.pem --data @cms.b64 https://****.ec.europa.eu/signerCertificate``` <br>
  8) Download the Trustlist again, and check if your DSC is available.
  
 
