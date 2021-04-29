@@ -14,7 +14,7 @@ For a successfull connection to the gateway there are several steps to prepare:
     - Authentication: NB<sub>TLS</sub>
     - Upload:   NB<sub>UP</sub>
     - CSCA(s):  NB<sub>CSCA</sub>
- 2) Send the Public Keys in CRT Format to the contact of the Test Operator (functional mailbox)
+ 2) Send the Public Keys in PEM Format to the contact of the Test Operator (functional mailbox)
  3) After Onboarding in the Test Environment, check the connectitivy with the following command:<br>
   ```curl -vvv -H "Accept: */*" --resolve ****.ec.europa.eu:443 --cert "auth_de.pem" --key "key.pem" https://****.ec.europa.eu/trustList``` <br>
     You should see a output like: <br>
