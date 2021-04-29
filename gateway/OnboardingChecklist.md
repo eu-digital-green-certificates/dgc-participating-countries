@@ -4,6 +4,8 @@
 
 Registration Process: [Process](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#31-registration-of-national-backends)
 
+**For acceptance and production environment is a certificate required from a public CA**
+
 ## Test Environment
 
 For a successfull connection to the gateway there are several steps to prepare: 
