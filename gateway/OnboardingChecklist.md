@@ -6,6 +6,11 @@ Registration Process: [Process](https://github.com/eu-digital-green-certificates
 
 **For acceptance and production environment is a certificate required from a public CA which follows the CAB Forum Rules. The certificate must be a organizational validated certificate with the correct country information.**
 
+## Links to the Environments
+
+- Test Environment: https://test-dgcg-ws.tech.ec.europa.eu
+- Acceptance Environment: https://acc-dgcg-ws.tech.ec.europa.eu
+
 ## Test Environment
 
 For a successfull connection to the gateway there are several steps to prepare: 
