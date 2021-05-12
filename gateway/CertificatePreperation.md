@@ -119,7 +119,7 @@ extendedKeyUsage = clientAuth
 **NOTE** :Beware that self-signed certificates should also contain the key usage Certificate signing (keyCertSign), so that the (self) signature of the certificate can be verified.
 ```
 [ext]
-keyUsage = critical, digitalSignature,keyCertSign
+keyUsage = critical, digitalSignature, keyCertSign
 extendedKeyUsage = clientAuth
 ```
 
