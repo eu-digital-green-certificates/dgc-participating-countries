@@ -115,6 +115,14 @@ CN = NationX_NB_TLS
 keyUsage = critical, digitalSignature
 extendedKeyUsage = clientAuth
 ```
+
+**NOTE** :Beware that self-signed certificates should also contain the key usage Certificate signing (keyCertSign), so that the (self) signature of the certificate can be verified.
+```
+[ext]
+keyUsage = critical, digitalSignature,keyCertSign
+extendedKeyUsage = clientAuth
+```
+
 ### Certificate generation
 Open a command line prompt in the folder where the *TLSClient.conf* is located and use the following OpenSSL command to create the private key (*NB_TLS.key*) and the certificate (*NB_TLS.pem*):
 ```
