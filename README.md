@@ -1,5 +1,5 @@
 <h1 align="center">
- Digital Green Certificate: Information for Participating Countries 
+ EU Digital COVID Certificate: Information for Participating Countries 
 </h1>
 
 <p align="center">
