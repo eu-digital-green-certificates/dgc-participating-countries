@@ -39,7 +39,7 @@ keyUsage = critical, digitalSignature
 subjectKeyIdentifier = hash
 authorityKeyIdentifier = keyid:always
 crlDistributionPoints = URI:http://crl.exampledomain.example/CRL/CSCA.crl
-extendedKeyUsage = 1.3.6.1.4.1.0.1847.2021.1.1,1.3.6.1.4.1.0.1847.2021.1.2,1.3.6.1.4.1.0.1847.2021.1.3
+extendedKeyUsage = 1.3.6.1.4.1.1847.2021.1.1,1.3.6.1.4.1.1847.2021.1.2,1.3.6.1.4.1.1847.2021.1.3
 ```
 It is recommended that a CSCA provides certificate revocation lists. Therefore, replace the crlDistributionPoints URI with the information for your member state.
 <br>
@@ -47,9 +47,9 @@ The extendedKeyUsage field is optional and can be used to further restrict the D
 
 |Field | Value|
 |------| -----|
-|extendedKeyUsage|    1.3.6.1.4.1.0.1847.2021.1.1 for Test Issuers
-|extendedKeyUsage|    1.3.6.1.4.1.0.1847.2021.1.2 for Vacination Issuers
-|extendedKeyUsage|    1.3.6.1.4.1.0.1847.2021.1.3 for Recovery Issuers
+|extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.1 for Test Issuers
+|extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.2 for Vacination Issuers
+|extendedKeyUsage|    1.3.6.1.4.1.1847.2021.1.3 for Recovery Issuers
 
 The above example contains all three extended key usages. <br>
 
@@ -167,7 +167,7 @@ authorityKeyIdentifier  = keyid:always
 subjectAltName          = dirName:dir_sect
 issuerAltName           = dirName:dir_sect
 crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl
-extendedKeyUsage        = 1.3.6.1.4.1.0.1847.2021.1.1,1.3.6.1.4.1.0.1847.2021.1.2,1.3.6.1.4.1.0.1847.2021.1.3
+extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.1,1.3.6.1.4.1.1847.2021.1.2,1.3.6.1.4.1.1847.2021.1.3
 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod
 
 [ document_signer_test_ext ]
@@ -177,7 +177,7 @@ authorityKeyIdentifier  = keyid:always
 subjectAltName          = dirName:dir_sect
 issuerAltName           = dirName:dir_sect
 crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl
-extendedKeyUsage        = 1.3.6.1.4.1.0.1847.2021.1.1
+extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.1
 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod
 
 [ document_signer_vaccinations_ext ]
@@ -187,7 +187,7 @@ authorityKeyIdentifier  = keyid:always
 subjectAltName          = dirName:dir_sect
 issuerAltName           = dirName:dir_sect
 crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl
-extendedKeyUsage        = 1.3.6.1.4.1.0.1847.2021.1.2
+extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.2
 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod
 
 [ document_signer_recovery_ext ]
@@ -197,7 +197,7 @@ authorityKeyIdentifier  = keyid:always
 subjectAltName          = dirName:dir_sect
 issuerAltName           = dirName:dir_sect
 crlDistributionPoints   = URI:http://crl.npkd.nl/CRLs/NLD-Health.crl
-extendedKeyUsage        = 1.3.6.1.4.1.0.1847.2021.1.3
+extendedKeyUsage        = 1.3.6.1.4.1.1847.2021.1.3
 2.5.29.16               = ASN1:SEQUENCE:DSprivateKeyUsagePeriod
 
 [ DSprivateKeyUsagePeriod ]
