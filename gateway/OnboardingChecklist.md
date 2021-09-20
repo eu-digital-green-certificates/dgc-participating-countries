@@ -4,7 +4,9 @@
 
 Registration Process: [Process](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#31-registration-of-national-backends)
 
-**For acceptance and production environment is a certificate required from a public CA which follows the CAB Forum Rules. The certificate must be a organizational validated certificate with the correct country information.**
+It is highly recommended:
+- **to use certificates issued from a public CA which follows the CAB Forum Rules**
+- **not to reuse any certificates across the different staging environments**
 
 ## Links to the Environments
 
