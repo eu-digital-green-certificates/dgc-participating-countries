@@ -4,6 +4,10 @@
 
 Registration Process: [Process](https://github.com/eu-digital-green-certificates/dgc-overview/blob/main/guides/certificate-governance.md#31-registration-of-national-backends)
 
+It is highly recommended:
+- **to use certificates issued from a public CA which follows the CAB Forum Rules**
+- **not to reuse any certificates across the different staging environments**
+
 ## Links to the Environments
 
 - Test Environment: https://test-dgcg-ws.tech.ec.europa.eu
